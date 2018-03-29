@@ -20,6 +20,15 @@
 		BEA3587B206BAA09007E9426 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA35876206BAA08007E9426 /* SVProgressHUD.framework */; };
 		BEA3587C206BAA09007E9426 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA35877206BAA09007E9426 /* ObjectMapper.framework */; };
 		BEA3587D206BAA09007E9426 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA35878206BAA09007E9426 /* Reachability.framework */; };
+		BEA35883206D01A9007E9426 /* ThumbnailDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA35882206D01A9007E9426 /* ThumbnailDto.swift */; };
+		BEA35886206D032B007E9426 /* ThumbnailDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA35885206D032B007E9426 /* ThumbnailDao.swift */; };
+		BEA3588A206D037C007E9426 /* RealmDaoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA35889206D037B007E9426 /* RealmDaoHelper.swift */; };
+		BEA3588E206D057B007E9426 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA3588C206D057B007E9426 /* APIClient.swift */; };
+		BEA3588F206D057B007E9426 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA3588D206D057B007E9426 /* Router.swift */; };
+		BEA35891206D0633007E9426 /* ITunesSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA35890206D0633007E9426 /* ITunesSearchAPI.swift */; };
+		BEA35893206D0E71007E9426 /* ITunesSearchAPIParamsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA35892206D0E71007E9426 /* ITunesSearchAPIParamsBuilder.swift */; };
+		BEA35895206D1026007E9426 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA35894206D1026007E9426 /* Track.swift */; };
+		BEA35897206D10E2007E9426 /* TrackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA35896206D10E2007E9426 /* TrackList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,15 @@
 		BEA35876206BAA08007E9426 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		BEA35877206BAA09007E9426 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		BEA35878206BAA09007E9426 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
+		BEA35882206D01A9007E9426 /* ThumbnailDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailDto.swift; sourceTree = "<group>"; };
+		BEA35885206D032B007E9426 /* ThumbnailDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailDao.swift; sourceTree = "<group>"; };
+		BEA35889206D037B007E9426 /* RealmDaoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDaoHelper.swift; sourceTree = "<group>"; };
+		BEA3588C206D057B007E9426 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		BEA3588D206D057B007E9426 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		BEA35890206D0633007E9426 /* ITunesSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesSearchAPI.swift; sourceTree = "<group>"; };
+		BEA35892206D0E71007E9426 /* ITunesSearchAPIParamsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesSearchAPIParamsBuilder.swift; sourceTree = "<group>"; };
+		BEA35894206D1026007E9426 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		BEA35896206D10E2007E9426 /* TrackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackList.swift; sourceTree = "<group>"; };
 		EFE1768A765288DFF340B24B /* Pods-skillUpTest_10_pre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skillUpTest_10_pre.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skillUpTest_10_pre/Pods-skillUpTest_10_pre.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,11 +102,11 @@
 		BEA35842206BA5C5007E9426 = {
 			isa = PBXGroup;
 			children = (
-				BEA3584D206BA5C5007E9426 /* skillUpTest_10_pre */,
-				BEA35862206BA5C5007E9426 /* skillUpTest_10_preTests */,
-				BEA3584C206BA5C5007E9426 /* Products */,
 				BEA35873206BAA08007E9426 /* Frameworks */,
 				C831F53E84E61F823CC6F5B5 /* Pods */,
+				BEA3584C206BA5C5007E9426 /* Products */,
+				BEA3584D206BA5C5007E9426 /* skillUpTest_10_pre */,
+				BEA35862206BA5C5007E9426 /* skillUpTest_10_preTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				BEA3586F206BA63D007E9426 /* Controllers */,
+				BEA35887206D037B007E9426 /* Helpers */,
+				BEA3587F206D0185007E9426 /* Models */,
 				BEA3586E206BA61B007E9426 /* Others */,
 			);
 			path = skillUpTest_10_pre;
@@ -113,8 +133,8 @@
 		BEA35862206BA5C5007E9426 /* skillUpTest_10_preTests */ = {
 			isa = PBXGroup;
 			children = (
-				BEA35863206BA5C5007E9426 /* skillUpTest_10_preTests.swift */,
 				BEA35865206BA5C5007E9426 /* Info.plist */,
+				BEA35863206BA5C5007E9426 /* skillUpTest_10_preTests.swift */,
 			);
 			path = skillUpTest_10_preTests;
 			sourceTree = "<group>";
@@ -132,8 +152,8 @@
 		BEA3586F206BA63D007E9426 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BEA35872206BA65C007E9426 /* LaunchScreen */,
 				BEA35870206BA649007E9426 /* ITunesSearch */,
+				BEA35872206BA65C007E9426 /* LaunchScreen */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -141,8 +161,8 @@
 		BEA35870206BA649007E9426 /* ITunesSearch */ = {
 			isa = PBXGroup;
 			children = (
-				BEA35850206BA5C5007E9426 /* ITunesSearchViewController.swift */,
 				BEA35852206BA5C5007E9426 /* ITunesSearch.storyboard */,
+				BEA35850206BA5C5007E9426 /* ITunesSearchViewController.swift */,
 			);
 			path = ITunesSearch;
 			sourceTree = "<group>";
@@ -167,6 +187,45 @@
 				50130249C01B8A7DE4D9ECBF /* Pods_skillUpTest_10_preTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEA3587F206D0185007E9426 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEA3588B206D043A007E9426 /* API */,
+				BEA35884206D02FF007E9426 /* DB */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BEA35884206D02FF007E9426 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				BEA35885206D032B007E9426 /* ThumbnailDao.swift */,
+				BEA35882206D01A9007E9426 /* ThumbnailDto.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		BEA35887206D037B007E9426 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BEA3588C206D057B007E9426 /* APIClient.swift */,
+				BEA35889206D037B007E9426 /* RealmDaoHelper.swift */,
+				BEA3588D206D057B007E9426 /* Router.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BEA3588B206D043A007E9426 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BEA35890206D0633007E9426 /* ITunesSearchAPI.swift */,
+				BEA35892206D0E71007E9426 /* ITunesSearchAPIParamsBuilder.swift */,
+				BEA35894206D1026007E9426 /* Track.swift */,
+				BEA35896206D10E2007E9426 /* TrackList.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		C831F53E84E61F823CC6F5B5 /* Pods */ = {
@@ -408,8 +467,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA35891206D0633007E9426 /* ITunesSearchAPI.swift in Sources */,
+				BEA35895206D1026007E9426 /* Track.swift in Sources */,
 				BEA35851206BA5C5007E9426 /* ITunesSearchViewController.swift in Sources */,
+				BEA35886206D032B007E9426 /* ThumbnailDao.swift in Sources */,
 				BEA3584F206BA5C5007E9426 /* AppDelegate.swift in Sources */,
+				BEA3588F206D057B007E9426 /* Router.swift in Sources */,
+				BEA35883206D01A9007E9426 /* ThumbnailDto.swift in Sources */,
+				BEA35897206D10E2007E9426 /* TrackList.swift in Sources */,
+				BEA3588A206D037C007E9426 /* RealmDaoHelper.swift in Sources */,
+				BEA3588E206D057B007E9426 /* APIClient.swift in Sources */,
+				BEA35893206D0E71007E9426 /* ITunesSearchAPIParamsBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +506,7 @@
 				BEA35853206BA5C5007E9426 /* Base */,
 			);
 			name = ITunesSearch.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		BEA35857206BA5C5007E9426 /* LaunchScreen.storyboard */ = {
@@ -446,6 +515,7 @@
 				BEA35858206BA5C5007E9426 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
