@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,12 +19,72 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAD-H4-Pbv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dgT-7h-igU">
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MusicListTableViewCell" rowHeight="87" id="u7B-L0-OtU" customClass="MusicListTableViewCell" customModule="skillUpTest_10_pre" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u7B-L0-OtU" id="JLG-Eo-V58">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YOW-Uz-8PV">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="eWP-Wt-XDc"/>
+                                                        <constraint firstAttribute="width" secondItem="YOW-Uz-8PV" secondAttribute="height" multiplier="1:1" id="tm7-Qy-P6v"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ems-oH-sLZ">
+                                                    <rect key="frame" x="70" y="26" width="290" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ems-oH-sLZ" secondAttribute="trailing" id="L6e-gQ-Fr5"/>
+                                                <constraint firstItem="ems-oH-sLZ" firstAttribute="top" secondItem="JLG-Eo-V58" secondAttribute="topMargin" constant="15" id="QPg-0L-dt2"/>
+                                                <constraint firstItem="YOW-Uz-8PV" firstAttribute="top" secondItem="JLG-Eo-V58" secondAttribute="top" constant="10" id="kKd-Ft-hfF"/>
+                                                <constraint firstItem="ems-oH-sLZ" firstAttribute="leading" secondItem="YOW-Uz-8PV" secondAttribute="trailing" constant="10" id="rId-oG-zTK"/>
+                                                <constraint firstItem="YOW-Uz-8PV" firstAttribute="leading" secondItem="JLG-Eo-V58" secondAttribute="leading" constant="10" id="sHR-QE-r3W"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="thumbnailImageView" destination="YOW-Uz-8PV" id="FdN-aj-eZ3"/>
+                                            <outlet property="trackNameLabel" destination="ems-oH-sLZ" id="FJG-B0-hxK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dgT-7h-igU" secondAttribute="trailing" id="3wB-nk-pzH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dgT-7h-igU" secondAttribute="bottom" id="8LC-80-Wva"/>
+                            <constraint firstItem="bAD-H4-Pbv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GtV-Lu-I1O"/>
+                            <constraint firstItem="bAD-H4-Pbv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PMU-5r-58s"/>
+                            <constraint firstItem="dgT-7h-igU" firstAttribute="top" secondItem="bAD-H4-Pbv" secondAttribute="bottom" id="Yzp-vh-Mw3"/>
+                            <constraint firstItem="bAD-H4-Pbv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fP5-Hy-mB2"/>
+                            <constraint firstItem="dgT-7h-igU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gKN-Qs-5UD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

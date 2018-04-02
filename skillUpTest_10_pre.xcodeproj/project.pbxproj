@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		136A06C3CDB89C48283D0ABB /* Pods_skillUpTest_10_pre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036DEA9EBD129BD73AA02E39 /* Pods_skillUpTest_10_pre.framework */; };
 		37E0A6E8323983FB50A7620F /* Pods_skillUpTest_10_preTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50130249C01B8A7DE4D9ECBF /* Pods_skillUpTest_10_preTests.framework */; };
+		BE4A351F206E6CB700181E31 /* MusicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A351E206E6CB700181E31 /* MusicListTableViewCell.swift */; };
+		BE4A3521206E6CD800181E31 /* MusicListTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A3520206E6CD800181E31 /* MusicListTableViewProvider.swift */; };
 		BEA3584F206BA5C5007E9426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA3584E206BA5C5007E9426 /* AppDelegate.swift */; };
 		BEA35851206BA5C5007E9426 /* ITunesSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA35850206BA5C5007E9426 /* ITunesSearchViewController.swift */; };
 		BEA35854206BA5C5007E9426 /* ITunesSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA35852206BA5C5007E9426 /* ITunesSearch.storyboard */; };
@@ -47,6 +49,8 @@
 		954E6FEC5932AAFBA2500BA7 /* Pods-skillUpTest_10_preTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skillUpTest_10_preTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-skillUpTest_10_preTests/Pods-skillUpTest_10_preTests.release.xcconfig"; sourceTree = "<group>"; };
 		AA6E3E9482E8742312DEBC6C /* Pods-skillUpTest_10_preTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skillUpTest_10_preTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skillUpTest_10_preTests/Pods-skillUpTest_10_preTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3C05965145BD34FF8861FB3 /* Pods-skillUpTest_10_pre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skillUpTest_10_pre.release.xcconfig"; path = "Pods/Target Support Files/Pods-skillUpTest_10_pre/Pods-skillUpTest_10_pre.release.xcconfig"; sourceTree = "<group>"; };
+		BE4A351E206E6CB700181E31 /* MusicListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewCell.swift; sourceTree = "<group>"; };
+		BE4A3520206E6CD800181E31 /* MusicListTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewProvider.swift; sourceTree = "<group>"; };
 		BEA3584B206BA5C5007E9426 /* skillUpTest_10_pre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skillUpTest_10_pre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA3584E206BA5C5007E9426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEA35850206BA5C5007E9426 /* ITunesSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesSearchViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE4A351D206E6C3300181E31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE4A351E206E6CB700181E31 /* MusicListTableViewCell.swift */,
+				BE4A3520206E6CD800181E31 /* MusicListTableViewProvider.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BEA35842206BA5C5007E9426 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 		BEA3584D206BA5C5007E9426 /* skillUpTest_10_pre */ = {
 			isa = PBXGroup;
 			children = (
+				BE4A351D206E6C3300181E31 /* Views */,
 				BEA3586F206BA63D007E9426 /* Controllers */,
 				BEA35887206D037B007E9426 /* Helpers */,
 				BEA3587F206D0185007E9426 /* Models */,
@@ -291,7 +305,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Seidi Nakamura";
 				TargetAttributes = {
 					BEA3584A206BA5C5007E9426 = {
@@ -468,12 +482,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEA35891206D0633007E9426 /* ITunesSearchAPI.swift in Sources */,
+				BE4A3521206E6CD800181E31 /* MusicListTableViewProvider.swift in Sources */,
 				BEA35895206D1026007E9426 /* Track.swift in Sources */,
 				BEA35851206BA5C5007E9426 /* ITunesSearchViewController.swift in Sources */,
 				BEA35886206D032B007E9426 /* ThumbnailDao.swift in Sources */,
 				BEA3584F206BA5C5007E9426 /* AppDelegate.swift in Sources */,
 				BEA3588F206D057B007E9426 /* Router.swift in Sources */,
 				BEA35883206D01A9007E9426 /* ThumbnailDto.swift in Sources */,
+				BE4A351F206E6CB700181E31 /* MusicListTableViewCell.swift in Sources */,
 				BEA35897206D10E2007E9426 /* TrackList.swift in Sources */,
 				BEA3588A206D037C007E9426 /* RealmDaoHelper.swift in Sources */,
 				BEA3588E206D057B007E9426 /* APIClient.swift in Sources */,
@@ -535,6 +551,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -542,6 +559,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -592,6 +610,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -599,6 +618,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
