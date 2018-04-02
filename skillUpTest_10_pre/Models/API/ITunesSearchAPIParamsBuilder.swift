@@ -13,6 +13,8 @@ class ITunesSearchAPIParamsBuilder {
         var params = [String: Any]()
         params["term"] = term
         params["media"] = "music"
+        params["country"] = "JP"
+        params["lang"] = "ja_jp"
         
         return params
     }

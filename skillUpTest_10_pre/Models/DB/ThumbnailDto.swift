@@ -11,7 +11,7 @@ import RealmSwift
 
 class ThumbnailDto: Object {
     @objc dynamic var trackID = 0
-    @objc dynamic var image: Data?
+    @objc dynamic var image = Data()
     
     override static func primaryKey() -> String? {
         return "trackID"

@@ -12,7 +12,7 @@ class Track: Mappable {
     var trackID = 0
     var trackName = ""
     var artistName = ""
-    var artworkURL1100 = ""
+    var artworkUrl100 = ""
     
     required init?(map: Map) {
     }
@@ -21,6 +21,6 @@ class Track: Mappable {
         trackID <- map["trackId"]
         trackName <- map["trackName"]
         artistName <- map["artistName"]
-        artworkURL1100 <- map["artworkUrl1100"]
+        artworkUrl100 <- map["artworkUrl100"]
     }
 }

@@ -11,6 +11,7 @@
 		37E0A6E8323983FB50A7620F /* Pods_skillUpTest_10_preTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50130249C01B8A7DE4D9ECBF /* Pods_skillUpTest_10_preTests.framework */; };
 		BE4A351F206E6CB700181E31 /* MusicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A351E206E6CB700181E31 /* MusicListTableViewCell.swift */; };
 		BE4A3521206E6CD800181E31 /* MusicListTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A3520206E6CD800181E31 /* MusicListTableViewProvider.swift */; };
+		BE66AB2520722B3800C9BAFF /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66AB2420722B3800C9BAFF /* Kingfisher.framework */; };
 		BEA3584F206BA5C5007E9426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA3584E206BA5C5007E9426 /* AppDelegate.swift */; };
 		BEA35851206BA5C5007E9426 /* ITunesSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA35850206BA5C5007E9426 /* ITunesSearchViewController.swift */; };
 		BEA35854206BA5C5007E9426 /* ITunesSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA35852206BA5C5007E9426 /* ITunesSearch.storyboard */; };
@@ -51,6 +52,7 @@
 		B3C05965145BD34FF8861FB3 /* Pods-skillUpTest_10_pre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skillUpTest_10_pre.release.xcconfig"; path = "Pods/Target Support Files/Pods-skillUpTest_10_pre/Pods-skillUpTest_10_pre.release.xcconfig"; sourceTree = "<group>"; };
 		BE4A351E206E6CB700181E31 /* MusicListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewCell.swift; sourceTree = "<group>"; };
 		BE4A3520206E6CD800181E31 /* MusicListTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewProvider.swift; sourceTree = "<group>"; };
+		BE66AB2420722B3800C9BAFF /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		BEA3584B206BA5C5007E9426 /* skillUpTest_10_pre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skillUpTest_10_pre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA3584E206BA5C5007E9426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEA35850206BA5C5007E9426 /* ITunesSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesSearchViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE66AB2520722B3800C9BAFF /* Kingfisher.framework in Frameworks */,
 				BEA35879206BAA09007E9426 /* Realm.framework in Frameworks */,
 				BEA3587A206BAA09007E9426 /* RealmSwift.framework in Frameworks */,
 				BEA3587B206BAA09007E9426 /* SVProgressHUD.framework in Frameworks */,
@@ -192,6 +195,7 @@
 		BEA35873206BAA08007E9426 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE66AB2420722B3800C9BAFF /* Kingfisher.framework */,
 				BEA35877206BAA09007E9426 /* ObjectMapper.framework */,
 				BEA35878206BAA09007E9426 /* Reachability.framework */,
 				BEA35874206BAA08007E9426 /* Realm.framework */,
@@ -452,6 +456,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			outputPaths = (
 			);
