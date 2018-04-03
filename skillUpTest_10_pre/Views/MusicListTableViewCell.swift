@@ -10,8 +10,8 @@ import Kingfisher
 import UIKit
 
 class MusicListTableViewCell: UITableViewCell {
-    @IBOutlet weak var thumbnailImageView: UIImageView!
-    @IBOutlet weak var trackNameLabel: UILabel!
+    @IBOutlet weak private var thumbnailImageView: UIImageView?
+    @IBOutlet weak private var trackNameLabel: UILabel?
     
     static var identifier: String {
         return String(describing: self)
@@ -24,28 +24,28 @@ class MusicListTableViewCell: UITableViewCell {
     }
     
     private func set(track: Track?) {
-        trackNameLabel.text = track?.trackName
+        trackNameLabel?.text = track?.trackName
         guard let track = track else {
             return
         }
         
-        if let thumbnail = ThumbnailDao.findByName(id: track.trackID){
+        if let thumbnail = ThumbnailDao.findByName(trackID: track.trackID) {
             guard  let image: UIImage = UIImage(data: thumbnail.image as Data) else {
                 return
             }
-            thumbnailImageView.image = image
+            thumbnailImageView?.image = image
             return
         }
         
         let url = URL(string: track.artworkUrl100)
         DispatchQueue.main.async {
-            self.thumbnailImageView.kf.setImage(with: url)
+            self.thumbnailImageView?.kf.setImage(with: url)
         }
-        guard let image = thumbnailImageView.image else {
+        guard let image = thumbnailImageView?.image else {
             return
         }
 
-        ThumbnailDao.addThumbnail(id: track.trackID, image: image)
+        ThumbnailDao.addThumbnail(trackID: track.trackID, image: image)
     }
 }
 

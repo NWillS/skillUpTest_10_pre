@@ -1,6 +1,4 @@
 
-//
-
 import Alamofire
 
 /// APIの処理結果
@@ -13,6 +11,13 @@ enum Result {
 }
 
 final class APIClient {
+    static func isReachable() -> Bool {
+        let net = NetworkReachabilityManager()
+        if (net?.isReachable)! {
+            return true
+        }
+        return false
+    }
     
     /// APIをコールする
     ///

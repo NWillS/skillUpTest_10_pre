@@ -9,15 +9,21 @@
 import Foundation
 import ObjectMapper
 
-protocol ITunesSearchAPIDelegate {
+protocol ITunesSearchAPIDelegate: class {
     func received(trackList: TrackList)
+    func offline()
 }
 
-class ITunesSearchAPI {
-    var delegate: ITunesSearchAPIDelegate?
+final class ITunesSearchAPI {
+    weak var delegate: ITunesSearchAPIDelegate?
+    
     func search(term: String) {
+        if !APIClient.isReachable() {
+            delegate?.offline()
+            return
+        }
         let router = Router.search(ITunesSearchAPIParamsBuilder.create(term: term))
-        APIClient().request(router: router){ [weak self] response in
+        APIClient().request(router: router) { [weak self] response in
             switch response {
             case .success(let result):
                 guard let trackList = Mapper<TrackList>().map(JSONObject: result) else {

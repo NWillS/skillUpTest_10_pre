@@ -6,16 +6,16 @@
 //  Copyright © 2018年 Seidi Nakamura. All rights reserved.
 //
 
-import UIKit
 import RealmSwift
+import UIKit
 
 final class ThumbnailDao {
     static let daoHelper = RealmDaoHelper<ThumbnailDto>()
     
-    static func addThumbnail(id: Int, image: UIImage) {
+    static func addThumbnail(trackID: Int, image: UIImage) {
         let thumbnail = ThumbnailDto()
         
-        thumbnail.trackID = id
+        thumbnail.trackID = trackID
         
         guard let data = UIImagePNGRepresentation(image) else {
             return
@@ -25,8 +25,8 @@ final class ThumbnailDao {
         daoHelper.add(object: thumbnail)
     }
     
-    static func findByName(id: Int) -> ThumbnailDto? {
-        let thumbnail = daoHelper.findFirst(key: id as AnyObject)
+    static func findByName(trackID: Int) -> ThumbnailDto? {
+        let thumbnail = daoHelper.findFirst(key: trackID as AnyObject)
         return thumbnail
     }
 }

@@ -2,5 +2,6 @@ github "Hearst-DD/ObjectMapper" == 3.1
 github "ashleymills/Reachability.swift" == 4.1.0
 github "SVProgressHUD/SVProgressHUD" == 2.2.5
 github "realm/realm-cocoa" == 3.1.1
-github "Alamofire/Alamofire"
-gitHub "onevcat/Kingfisher"
+github "Alamofire/Alamofire" ~> 4.7
+github "onevcat/Kingfisher" ~> 4.0
+github "sgr-ksmt/Alertift" ~> 3.0

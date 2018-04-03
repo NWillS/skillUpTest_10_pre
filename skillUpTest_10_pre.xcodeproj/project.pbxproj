@@ -12,12 +12,14 @@
 		BE4A351F206E6CB700181E31 /* MusicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A351E206E6CB700181E31 /* MusicListTableViewCell.swift */; };
 		BE4A3521206E6CD800181E31 /* MusicListTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A3520206E6CD800181E31 /* MusicListTableViewProvider.swift */; };
 		BE66AB2520722B3800C9BAFF /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66AB2420722B3800C9BAFF /* Kingfisher.framework */; };
+		BE66AB2C2073020100C9BAFF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = BE66AB2B2073020100C9BAFF /* .swiftlint.yml */; };
+		BE66AB2F207334FB00C9BAFF /* Alertift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66AB2E207334FB00C9BAFF /* Alertift.framework */; };
+		BE66AB312073351100C9BAFF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE66AB302073351100C9BAFF /* Alamofire.framework */; };
 		BEA3584F206BA5C5007E9426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA3584E206BA5C5007E9426 /* AppDelegate.swift */; };
 		BEA35851206BA5C5007E9426 /* ITunesSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA35850206BA5C5007E9426 /* ITunesSearchViewController.swift */; };
 		BEA35854206BA5C5007E9426 /* ITunesSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA35852206BA5C5007E9426 /* ITunesSearch.storyboard */; };
 		BEA35856206BA5C5007E9426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA35855206BA5C5007E9426 /* Assets.xcassets */; };
 		BEA35859206BA5C5007E9426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA35857206BA5C5007E9426 /* LaunchScreen.storyboard */; };
-		BEA35864206BA5C5007E9426 /* skillUpTest_10_preTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA35863206BA5C5007E9426 /* skillUpTest_10_preTests.swift */; };
 		BEA35879206BAA09007E9426 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA35874206BAA08007E9426 /* Realm.framework */; };
 		BEA3587A206BAA09007E9426 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA35875206BAA08007E9426 /* RealmSwift.framework */; };
 		BEA3587B206BAA09007E9426 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA35876206BAA08007E9426 /* SVProgressHUD.framework */; };
@@ -53,6 +55,9 @@
 		BE4A351E206E6CB700181E31 /* MusicListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewCell.swift; sourceTree = "<group>"; };
 		BE4A3520206E6CD800181E31 /* MusicListTableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewProvider.swift; sourceTree = "<group>"; };
 		BE66AB2420722B3800C9BAFF /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		BE66AB2B2073020100C9BAFF /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		BE66AB2E207334FB00C9BAFF /* Alertift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alertift.framework; path = Carthage/Build/iOS/Alertift.framework; sourceTree = "<group>"; };
+		BE66AB302073351100C9BAFF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		BEA3584B206BA5C5007E9426 /* skillUpTest_10_pre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skillUpTest_10_pre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA3584E206BA5C5007E9426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEA35850206BA5C5007E9426 /* ITunesSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesSearchViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +66,6 @@
 		BEA35858206BA5C5007E9426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEA3585A206BA5C5007E9426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA3585F206BA5C5007E9426 /* skillUpTest_10_preTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skillUpTest_10_preTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEA35863206BA5C5007E9426 /* skillUpTest_10_preTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skillUpTest_10_preTests.swift; sourceTree = "<group>"; };
 		BEA35865206BA5C5007E9426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA35874206BAA08007E9426 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		BEA35875206BAA08007E9426 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE66AB312073351100C9BAFF /* Alamofire.framework in Frameworks */,
+				BE66AB2F207334FB00C9BAFF /* Alertift.framework in Frameworks */,
 				BE66AB2520722B3800C9BAFF /* Kingfisher.framework in Frameworks */,
 				BEA35879206BAA09007E9426 /* Realm.framework in Frameworks */,
 				BEA3587A206BAA09007E9426 /* RealmSwift.framework in Frameworks */,
@@ -118,6 +124,7 @@
 		BEA35842206BA5C5007E9426 = {
 			isa = PBXGroup;
 			children = (
+				BE66AB2B2073020100C9BAFF /* .swiftlint.yml */,
 				BEA35873206BAA08007E9426 /* Frameworks */,
 				C831F53E84E61F823CC6F5B5 /* Pods */,
 				BEA3584C206BA5C5007E9426 /* Products */,
@@ -151,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				BEA35865206BA5C5007E9426 /* Info.plist */,
-				BEA35863206BA5C5007E9426 /* skillUpTest_10_preTests.swift */,
 			);
 			path = skillUpTest_10_preTests;
 			sourceTree = "<group>";
@@ -195,6 +201,8 @@
 		BEA35873206BAA08007E9426 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE66AB302073351100C9BAFF /* Alamofire.framework */,
+				BE66AB2E207334FB00C9BAFF /* Alertift.framework */,
 				BE66AB2420722B3800C9BAFF /* Kingfisher.framework */,
 				BEA35877206BAA09007E9426 /* ObjectMapper.framework */,
 				BEA35878206BAA09007E9426 /* Reachability.framework */,
@@ -268,9 +276,10 @@
 				BEA35847206BA5C5007E9426 /* Sources */,
 				BEA35848206BA5C5007E9426 /* Frameworks */,
 				BEA35849206BA5C5007E9426 /* Resources */,
-				BEA3587E206BAA1C007E9426 /* ShellScript */,
+				BEA3587E206BAA1C007E9426 /* Carthage */,
 				BFF01CBA2356375254A4E066 /* [CP] Embed Pods Frameworks */,
 				99C705C69971627E48CBA198 /* [CP] Copy Pods Resources */,
+				BE66AB2D2073024100C9BAFF /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -347,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE66AB2C2073020100C9BAFF /* .swiftlint.yml in Resources */,
 				BEA35859206BA5C5007E9426 /* LaunchScreen.storyboard in Resources */,
 				BEA35856206BA5C5007E9426 /* Assets.xcassets in Resources */,
 				BEA35854206BA5C5007E9426 /* ITunesSearch.storyboard in Resources */,
@@ -444,7 +454,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-skillUpTest_10_pre/Pods-skillUpTest_10_pre-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BEA3587E206BAA1C007E9426 /* ShellScript */ = {
+		BE66AB2D2073024100C9BAFF /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		BEA3587E206BAA1C007E9426 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -457,7 +481,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alertift.framework",
 			);
+			name = Carthage;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,7 +532,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEA35864206BA5C5007E9426 /* skillUpTest_10_preTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

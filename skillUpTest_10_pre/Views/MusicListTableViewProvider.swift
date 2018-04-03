@@ -11,21 +11,24 @@ import UIKit
 class MusicListTableViewProvider: NSObject {
     var musicList: TrackList?
     
-    func set(musicList: TrackList){
+    func set(musicList: TrackList) {
         self.musicList = musicList
     }
 }
 
 extension MusicListTableViewProvider: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let count = musicList?.resultCount else{
+        guard let count = musicList?.resultCount else {
             return 0
         }
         return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: MusicListTableViewCell.identifier) as! MusicListTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MusicListTableViewCell.identifier)
+            as? MusicListTableViewCell else {
+            fatalError("MusicListTableViewCellがありません")
+        }
         cell.item = musicList?.results[indexPath.row]
         
         return cell
